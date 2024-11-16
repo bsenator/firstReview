@@ -133,7 +133,7 @@ const Footer = () => {
             headerIcon="assets/LOGO2.png"
             headerTxtColor="white"
             headerBgColor="#02182b"
-            headerTitle="Birou de Avocatura si Insolventa"
+            headerTitle="Hukuk ve Danışmanlık Bürosu"
             headerCaption="Online"
             bodyBgColor="#bbb"
             chatPersonName="Support"
