@@ -2,12 +2,7 @@ import React from "react";
 import { Helmet } from "react-helmet";
 import { Link } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import {
-  faCalendarCheck,
-  faFileCircleCheck,
-  faCommentsDollar,
-  faGavel,
-} from "@fortawesome/free-solid-svg-icons";
+import { faCalendarCheck, faGavel } from "@fortawesome/free-solid-svg-icons";
 const Acasa = () => {
   return (
     <>
@@ -29,11 +24,16 @@ const Acasa = () => {
                 <div className="text-1 fs-2 pb-3">Avukat Elif Ezgi</div>
                 <div className="text-2 fs-4">
                   HUKUK & DANIŞMANLIK BÜROSU
-                  <span className="fw-bold">
-                    <br></br> Konya ve İlçeleri, <br></br>
-                    Karaman - Niğde - Antalya - AfyonKarahisar - Aksaray{" "}
-                  </span>
+                  {
+                    <span className="fw-bold">
+                      <br></br> Konya <br></br>
+                    </span>
+                  }
+                  {/* <div className="text-3  fw-light">
+                    Konya İlçeleri- Karaman - Niğde - Antalya - AfyonKarahisar - Aksaray{" "}
+                  </div>*/}
                 </div>
+
                 <div className="text-3 fst-italic fw-light">
                   "Adaletin olmadığı yerde gerçek adalet yoktur ve adaletin
                   olmadığı yerde doğruluk bulunamaz." -{" "}
@@ -56,32 +56,6 @@ const Acasa = () => {
                     </button>
                   </Link>
                 </div>
-                <div className="col flex-grow-1">
-                  <Link to="/contact">
-                    <button
-                      className="btn btn-lg btn-outline-dark type-button p-4 w-100 fw-bold"
-                      aria-label="Cere o evaluare"
-                    >
-                      <span className="p-3">
-                        <FontAwesomeIcon icon={faFileCircleCheck} size="1x" />
-                      </span>
-                      TEKLİF AL
-                    </button>
-                  </Link>
-                </div>
-                <div className="col flex-grow-1">
-                  <Link to="/informatii-utile">
-                    <button
-                      className="btn btn-lg btn-outline-dark type-button p-4 w-100 fw-bold"
-                      aria-label="Onorarii"
-                    >
-                      <span className="p-3">
-                        <FontAwesomeIcon icon={faCommentsDollar} size="1x" />
-                      </span>
-                      ÜCRETLER
-                    </button>
-                  </Link>
-                </div>
               </div>
             </div>
             {/* small screens buttons*/}
@@ -96,27 +70,6 @@ const Acasa = () => {
                     <FontAwesomeIcon icon={faCalendarCheck} size="1x" />
                   </span>
                   RANDEVU AL
-                </button>
-              </Link>
-              <Link to="/contact">
-                <button
-                  className="btn btn-outline-dark type-button p-2 mb-1 btn-md me-1"
-                  aria-label="Cere o evaluare"
-                >
-                  <span className="p-3">
-                    <FontAwesomeIcon icon={faFileCircleCheck} size="1x" />
-                  </span>
-                  TEKLİF AL                </button>
-              </Link>
-              <Link to="/informatii-utile">
-                <button
-                  className="btn btn-outline-dark type-button p-2 btn-md"
-                  aria-label="Onorarii"
-                >
-                  <span className="p-3">
-                    <FontAwesomeIcon icon={faCommentsDollar} size="1x" />
-                  </span>
-                  ÜCRETLER
                 </button>
               </Link>
             </div>
@@ -286,7 +239,7 @@ const Acasa = () => {
                 <img
                   src="/assets/about-us.webp"
                   className="intro-img img-fluid d-block rounded-2"
-                  alt="two persons at a desk"
+                  alt="Avukat Elif Ezgi"
                   style={{ maxHeight: "300px" }}
                 />
               </div>
